@@ -1,0 +1,19 @@
+workflow_version: "1.0.0"
+organism: "Vreelandella boliviensis LC1"
+former_name: "Halomonas boliviensis LC1"
+taxonomy_id: 1072583
+source_model: "../model/iAL1080.xml"
+release_review_root: "release_assets"
+legacy_workflow_root: "legacy_assets"
+draft_model: "models/draft/LC1_DRAFT.xml"
+genome: null
+proteome: null
+annotation: null
+final_model_id: "iAL1080"
+biomass_reaction: "Growth"
+phb_reaction: "DM_phb_c"
+solver: "glpk"
+run_memote: false
+allow_model_overwrite: false
+allow_foreign_gpr: false
+github_export: "export/reconstruction_framework"

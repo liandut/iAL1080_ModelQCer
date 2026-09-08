@@ -1,0 +1,5 @@
+media_name: "HB final manuscript glucose minimal medium"
+source: "media/HB_FINAL_MANUSCRIPT_MEDIUM.tsv"
+carbon_exchange: "EX_glc__D_e"
+biomass_reaction: "Growth"
+closed_system_atpm: "ATPM"

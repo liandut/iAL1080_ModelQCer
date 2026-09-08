@@ -1,0 +1,2 @@
+validation_dataset	initial_NH4Cl_g_L	equivalent_percent_wv	literature_PHB_wt_pct	literature_SD_pct	model_prediction_from_2008_calibration_pct	error_percentage_points	absolute_error_percentage_points	error_in_SD_units	interpretation
+Bondar_2022_N_lim	3.0	0.3	51.1	1.3	49.896247	-1.203752999999999	1.203752999999999	-0.9259638461538453	Approximate cross-study validation; same initial NH4Cl level but different fed-batch medium/feed context.

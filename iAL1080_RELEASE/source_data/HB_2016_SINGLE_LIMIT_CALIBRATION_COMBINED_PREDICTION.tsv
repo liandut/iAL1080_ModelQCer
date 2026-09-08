@@ -1,0 +1,4 @@
+condition	model_N_fraction	model_O2_fraction	shared_residual_growth_fraction	shared_accumulation_window_h	literature_PHB_wt_pct	model_PHB_wt_pct	error_percentage_points	role
+N_only	0.5	1.0	0.7052821313945055	5.176343543942107	45.0	45.000223	0.000223	calibration
+O2_only	1.0	0.25	0.7052821313945055	5.176343543942107	37.0	37.000071	7.1e-05	calibration
+Combined	0.5	0.25	0.7052821313945055	5.176343543942107	73.0	40.505666	-32.494334	held-out prediction

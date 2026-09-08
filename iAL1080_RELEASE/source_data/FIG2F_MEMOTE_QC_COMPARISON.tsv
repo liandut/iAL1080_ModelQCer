@@ -1,0 +1,7 @@
+metric	final_percent	definition	draft_percent
+Total MEMOTE score	93.045301	MEMOTE weighted total	68.0
+Stoichiometric consistency	100.0	MEMOTE test score	0.0
+Mass balance	100.0	MEMOTE test score	99.9
+Charge balance	92.790262	MEMOTE test score	79.3
+Metabolite connectivity	96.630566	MEMOTE disconnected-metabolite complement	100.0
+Bounded-flux complement	63.066202	MEMOTE bounded-flux complement	36.0

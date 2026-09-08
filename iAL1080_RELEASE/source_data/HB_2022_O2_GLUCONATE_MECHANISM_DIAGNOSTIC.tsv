@@ -1,0 +1,4 @@
+experimental_DO_label	model_O2_fraction_ordinal_not_physical_mapping	literature_PHB_wt_pct	literature_gluconate_g_L	unconstrained_PHB_flux_mmol_lump_gDW_h	unconstrained_endpoint_pct_after_highO2_time_calibration	data_constrained_gluconate_mass_yield_g_g_est	forced_gluconate_flux_mmol_gDW_h	gluconate_constrained_PHB_flux_mmol_lump_gDW_h	gluconate_constrained_endpoint_pct_after_highO2_time_calibration
+5%	0.25	62.2	30.2	0.8319955738202937	39.2658094640592	0.11491628614916286	0.2955214175165967	0.749308322143212	43.21162010296313
+20%	0.5	53.5	65.7	0.8179217064163753	38.72405496624389	0.25	0.6429058652596161	0.6379813290025549	39.19224886964642
+45%	1.0	37.8	72.0	0.7941395316142885	37.80000000000418	0.273972602739726	0.7045543728872505	0.6060059803575636	37.8

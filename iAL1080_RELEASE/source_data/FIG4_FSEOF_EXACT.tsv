@@ -1,0 +1,6 @@
+reaction_id	slope	spearman_rho	expected_slope	expected_rho	status	method
+ACACT1r	4.000000000000001	1.0	4.0	1.0	PASS	biomass fixed at exact optimum at each enforced-PHB level
+PDH	3.742479317694744	1.0	3.742	1.0	PASS	biomass fixed at exact optimum at each enforced-PHB level
+PHB_SYN_HB	1.0	1.0	1.0	1.0	PASS	biomass fixed at exact optimum at each enforced-PHB level
+ENO	1.3744045143217414	0.9636363636363636	1.374	0.964	PASS	biomass fixed at exact optimum at each enforced-PHB level
+AACOAR_syn	-0.0567179357577087	-0.4061811972299616	-0.0567	-0.406	PASS	biomass fixed at exact optimum at each enforced-PHB level

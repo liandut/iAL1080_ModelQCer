@@ -1,0 +1,5 @@
+review_id	target_precursor	reaction_id	equation	source	weight	required_flux	reaction_evidence	candidate_gpr	gpr_evidence	foreign_gpr_added
+HBREV-0010	carbon phenotype; GPR; exchange routes	GALKr	RETAIN_SELECTED_GAPFILL_CHEMISTRY; GPR=EMPTY	SELECTED_GAPFILL_REVIEW.tsv	100.0	NOT_RECOMPUTED	existing HB phenotype benchmark; no foreign GPR transfer		NO_LC1_SPECIFIC_GPR_ASSIGNED	NO
+HBREV-0011	carbon phenotype; GPR; exchange routes	MANabcpp	RETAIN_SELECTED_GAPFILL_CHEMISTRY; GPR=EMPTY	SELECTED_GAPFILL_REVIEW.tsv	100.0	NOT_RECOMPUTED	existing HB phenotype benchmark; no foreign GPR transfer		NO_LC1_SPECIFIC_GPR_ASSIGNED	NO
+HBREV-0012	carbon phenotype; GPR; exchange routes	HEX4	RETAIN_SELECTED_GAPFILL_CHEMISTRY; GPR=EMPTY	SELECTED_GAPFILL_REVIEW.tsv	100.0	NOT_RECOMPUTED	existing HB phenotype benchmark; no foreign GPR transfer		NO_LC1_SPECIFIC_GPR_ASSIGNED	NO
+HBREV-0013	carbon phenotype; GPR; exchange routes	UGLT	RETAIN_SELECTED_GAPFILL_CHEMISTRY; GPR=EMPTY	SELECTED_GAPFILL_REVIEW.tsv	100.0	NOT_RECOMPUTED	existing HB phenotype benchmark; no foreign GPR transfer		NO_LC1_SPECIFIC_GPR_ASSIGNED	NO

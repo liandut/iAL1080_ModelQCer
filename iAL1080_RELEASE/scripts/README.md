@@ -1,0 +1,3 @@
+# Release-safe scripts
+
+Scripts use only paths relative to this release directory. `verify_release.py` checks the canonical model; `reproduce_supplementary_s1.py` redraws the earlier frozen S1 analysis. The portable scripts in `supplementary/` redraw Supplementary Figures S1–S4 from `source_data/supplementary/` and write panel-wise PNG files to `figures/supplementary/`. Install `scripts/supplementary/requirements.txt`, then run `python scripts/supplementary/plot_all_supplementary_panels.py`. Internal scripts that require laboratory-only files or machine-specific absolute paths are intentionally excluded.

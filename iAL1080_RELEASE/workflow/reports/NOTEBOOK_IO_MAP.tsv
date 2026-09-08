@@ -1,0 +1,17 @@
+notebook	inputs	outputs	modifies_model	manual_review_required	can_run_automatically	notes
+00_project_setup.ipynb	config/project.yaml; requirements.txt	reports/00_environment_report.md; workflow_manifest.tsv	NO	NO	YES	Does not overwrite existing outputs
+01_input_genome_proteome.ipynb	config/project.yaml; input/genome; input/proteome	evidence/input_manifest.tsv; evidence/genome_statistics.tsv; evidence/proteome_statistics.tsv	NO	NO	YES	Does not overwrite existing outputs
+02_functional_annotation_and_id_mapping.ipynb	legacy workflow mapping; config/thresholds.yaml	evidence/protein_mapping/*.tsv	NO	YES	YES	Does not overwrite existing outputs
+03_draft_gem_reconstruction.ipynb	configured draft model or proteome	models/draft/LC1_DRAFT.xml; reports/03_draft_statistics.tsv	NO	NO	YES	Does not overwrite existing outputs
+04_evidence_integration.ipynb	existing evidence tables; protein mapping	evidence/GENE_EVIDENCE.tsv; evidence/REACTION_EVIDENCE.tsv	NO	NO	YES	Does not overwrite existing outputs
+05_reaction_gpr_candidate_curation.ipynb	evidence tables; existing centralized review	review/candidates/REACTION_GPR_REVIEW.tsv	NO	YES	YES	Does not overwrite existing outputs
+06_biomass_reconstruction.ipynb	final V2.2 biomass evidence; source model	evidence/biomass/*.tsv; review/candidates/BIOMASS_REVIEW.tsv; models/candidates/LC1_BIOMASS_CANDIDATE.xml	NO	YES	YES	Does not overwrite existing outputs
+07_precursor_gapfill.ipynb	candidate model; existing weighted-pFBA results	evidence/gapfill/*.tsv; review/candidates/GAPFILL_REVIEW.tsv; models/candidates/LC1_GAPFILL_CANDIDATE.xml	NO	YES	YES	Does not overwrite existing outputs
+08_direction_transport_exchange_qc.ipynb	candidate model; existing proposals	review/candidates/DIRECTION_REVIEW.tsv; TRANSPORT_EXCHANGE_REVIEW.tsv; QC_FLAG_REVIEW.tsv	NO	YES	YES	Does not overwrite existing outputs
+09_generate_manual_review_package.ipynb	review/candidates/*.tsv	review/HUMAN_REVIEW_PACKAGE.tsv; review/HUMAN_REVIEW_PACKAGE.xlsx	NO	YES	YES	Does not overwrite existing outputs
+10_import_manual_decisions.ipynb	review/HUMAN_REVIEW_PACKAGE.tsv	review/decisions/APPROVED_DECISIONS.tsv; REJECTED_DECISIONS.tsv; DEFERRED_DECISIONS.tsv; DECISION_VALIDATION_REPORT.md	NO	YES	NO	Does not overwrite existing outputs
+11_apply_manual_decisions.ipynb	last candidate model; review/decisions/APPROVED_DECISIONS.tsv	models/reviewed/LC1_REVIEWED_MODEL.xml; review/decisions/DECISION_APPLICATION_LOG.tsv	YES	YES	NO	Does not overwrite existing outputs
+12_global_regression_and_memote_qc.ipynb	models/reviewed/LC1_REVIEWED_MODEL.xml; config/media.yaml	qc/regression; qc/memote; qc/mass_charge; qc/blocked; qc/energy	NO	NO	NO	Does not overwrite existing outputs
+13_phenotype_validation.ipynb	reviewed model; existing final phenotype assets	validation/carbon_sources/CARBON_PHENOTYPE_RESULTS.tsv; validation/essentiality/ESSENTIAL_GENES.tsv	NO	NO	NO	Does not overwrite existing outputs
+14_finalize_release_model.ipynb	reviewed model; decisions; regression; MEMOTE	models/final/iAL1080_RELEASE_CANDIDATE.xml; MODEL_RELEASE_MANIFEST.tsv	YES	NO	NO	Does not overwrite existing outputs
+15_export_reproducibility_package.ipynb	framework outputs	GITHUB_RELEASE_REVIEW/reconstruction_framework	NO	NO	NO	Does not overwrite existing outputs

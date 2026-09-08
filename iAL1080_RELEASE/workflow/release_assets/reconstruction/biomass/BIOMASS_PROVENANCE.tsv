@@ -1,0 +1,7 @@
+component	fraction	evidence_basis	source_file	direct_LC1_measurement
+Protein	0.55	LC1 proteome-derived amino-acid composition	HB_AA_COMPOSITION.tsv	NO
+RNA	0.21	sequence-derived nucleotide composition with literature macro-fraction	HB_RNA_COMPOSITION.tsv	NO
+DNA	0.031	LC1 genome composition with literature macro-fraction	HB_DNA_COMPOSITION.tsv	NO
+Residual	0.209	same precursor scaffold, normalized to structural mass	BIOMASS_V2_2_SAME_COMPONENTS_AUDIT.tsv	NO
+GAM	53.95 mmol ATP/gDW	retained project GAM record	BIOMASS_V2_2_SAME_COMPONENTS_REPORT.md	NO
+PHB	excluded	storage polymer excluded from basal biomass	BIOMASS_V2_2_SAME_COMPONENTS_REPORT.md	NOT_APPLICABLE

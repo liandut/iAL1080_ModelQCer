@@ -1,0 +1,17 @@
+step	notebook	main_input	main_output	status	timestamp	notes
+0	00_project_setup.ipynb	config/project.yaml; requirements.txt	reports/00_environment_report.md; workflow_manifest.tsv	PREPARED		
+1	01_input_genome_proteome.ipynb	config/project.yaml; input/genome; input/proteome	evidence/input_manifest.tsv; evidence/genome_statistics.tsv; evidence/proteome_statistics.tsv	PREPARED		
+2	02_functional_annotation_and_id_mapping.ipynb	legacy workflow mapping; config/thresholds.yaml	evidence/protein_mapping/*.tsv	PREPARED		
+3	03_draft_gem_reconstruction.ipynb	configured draft model or proteome	models/draft/LC1_DRAFT.xml; reports/03_draft_statistics.tsv	PREPARED		
+4	04_evidence_integration.ipynb	existing evidence tables; protein mapping	evidence/GENE_EVIDENCE.tsv; evidence/REACTION_EVIDENCE.tsv	PREPARED		
+5	05_reaction_gpr_candidate_curation.ipynb	evidence tables; existing centralized review	review/candidates/REACTION_GPR_REVIEW.tsv	PREPARED		
+6	06_biomass_reconstruction.ipynb	final V2.2 biomass evidence; source model	evidence/biomass/*.tsv; review/candidates/BIOMASS_REVIEW.tsv; models/candidates/LC1_BIOMASS_CANDIDATE.xml	PREPARED		
+7	07_precursor_gapfill.ipynb	candidate model; existing weighted-pFBA results	evidence/gapfill/*.tsv; review/candidates/GAPFILL_REVIEW.tsv; models/candidates/LC1_GAPFILL_CANDIDATE.xml	PREPARED		
+8	08_direction_transport_exchange_qc.ipynb	candidate model; existing proposals	review/candidates/DIRECTION_REVIEW.tsv; TRANSPORT_EXCHANGE_REVIEW.tsv; QC_FLAG_REVIEW.tsv	PREPARED		
+9	09_generate_manual_review_package.ipynb	review/candidates/*.tsv	review/HUMAN_REVIEW_PACKAGE.tsv; review/HUMAN_REVIEW_PACKAGE.xlsx	PREPARED		Manual gate
+10	10_import_manual_decisions.ipynb	review/HUMAN_REVIEW_PACKAGE.tsv	review/decisions/APPROVED_DECISIONS.tsv; REJECTED_DECISIONS.tsv; DEFERRED_DECISIONS.tsv; DECISION_VALIDATION_REPORT.md	PREPARED		
+11	11_apply_manual_decisions.ipynb	last candidate model; review/decisions/APPROVED_DECISIONS.tsv	models/reviewed/LC1_REVIEWED_MODEL.xml; review/decisions/DECISION_APPLICATION_LOG.tsv	PREPARED		
+12	12_global_regression_and_memote_qc.ipynb	models/reviewed/LC1_REVIEWED_MODEL.xml; config/media.yaml	qc/regression; qc/memote; qc/mass_charge; qc/blocked; qc/energy	PREPARED		
+13	13_phenotype_validation.ipynb	reviewed model; existing final phenotype assets	validation/carbon_sources/CARBON_PHENOTYPE_RESULTS.tsv; validation/essentiality/ESSENTIAL_GENES.tsv	PREPARED		
+14	14_finalize_release_model.ipynb	reviewed model; decisions; regression; MEMOTE	models/final/iAL1080_RELEASE_CANDIDATE.xml; MODEL_RELEASE_MANIFEST.tsv	PREPARED		
+15	15_export_reproducibility_package.ipynb	framework outputs	GITHUB_RELEASE_REVIEW/reconstruction_framework	PREPARED		

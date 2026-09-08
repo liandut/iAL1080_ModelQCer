@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use iAL1080 or the associated curation workflow, please cite this work."
+title: "iAL1080: a high-quality genome-scale metabolic model of Vreelandella boliviensis LC1"
+type: software
+version: "1.0.0"
+license: MIT
+authors:
+  - family-names: "Li"
+    given-names: "Aonan"
+# Author list/order and version require user confirmation.
+# repository-code, date-released, and DOI are intentionally omitted until verified.

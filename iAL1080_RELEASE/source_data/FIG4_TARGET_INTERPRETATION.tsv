@@ -1,0 +1,6 @@
+reaction	release_slope	release_rho	interpretation
+ACACT1r (PhaA)	4.0	1.0	Robust main target
+PDH	3.7424793177	1.0	Robust main target
+PHB_SYN_HB (PhaC)	1.0	1.0	Positive pathway control
+ENO	1.3744045143	0.963636	Secondary support
+AACOAR_syn (PhaB)	-0.0567179358	-0.406181	Sensitivity-supported; 4.000/1.000 when HBCE/HACD1 closed

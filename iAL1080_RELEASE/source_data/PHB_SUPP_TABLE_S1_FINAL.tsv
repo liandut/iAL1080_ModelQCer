@@ -1,0 +1,8 @@
+dataset	year	experimental_condition	experimental_endpoint	evidence_role	model_use	interpretation
+2008 N-response	2008	NH4Cl 0.15% / 0.30%	62% / 50%	CALIBRATION	62.10% / 49.90%	Used to calibrate the N response
+2022 N-lim	2022	NH4Cl 3.0 g L^-1; N exhaustion near 30 h	51.1 +/- 1.3%	CROSS-STUDY CONSISTENCY CHECK	49.90% carried from 2008 calibration	Contextual transfer check; not independent validation
+2016 N-only	2016	N limitation	45%	CALIBRATION	45.00%	Single-limitation calibration
+2016 O2-only	2016	O2 limitation	37%	CALIBRATION	37.00%	Single-limitation calibration
+2016 combined N + low O2	2016	Combined limitation	73%	HELD-OUT CHALLENGE	40.505666% steady-state result	Not used for calibration
+Pseudo-dynamic combined analysis	2016	Residual-growth reachability	73% reference endpoint	MECHANISTIC / REACHABILITY ANALYSIS	Reachable under strong growth arrest	Not a kinetic model
+2022 O2 gradient / gluconate	2022	5%, 20%, 45% DO	PHB decreases; gluconate increases	QUALITATIVE MECHANISTIC CONTEXT	Direction compared descriptively	DO% not converted to uptake flux

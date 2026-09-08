@@ -1,0 +1,15 @@
+protein_mapping:
+  strict_rbh_evalue: 1.0e-10
+  minimum_bidirectional_coverage: 0.70
+gapfill:
+  precursor_flux_threshold: 1.0e-8
+  existing_reaction_weight: 1.0
+  universal_only_weight: 100.0
+  retained_fraction_of_vmax: 0.99
+  demand_flux_cap: 1.0
+regression:
+  numerical_tolerance: 1.0e-8
+  growth_positive_threshold: 1.0e-8
+  closed_atpm_tolerance: 1.0e-8
+manual_review:
+  allowed_decisions: [APPROVE, REJECT, REVISE, DEFER, UNRESOLVED]

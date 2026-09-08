@@ -1,0 +1,9 @@
+substrate	model_feasible	audit_FBA_growth	evidence_grade	evidence_context	recommended_role	main_or_supporting
+D-glucose	YES	1.037	A	direct literature-supported utilization	literature-supported substrate-utilization consistency	MAIN_POS
+Sucrose	YES	2.146	A	direct literature-supported utilization	literature-supported substrate-utilization consistency	MAIN_POS
+Maltose	YES	2.146	A	direct literature-supported utilization	literature-supported substrate-utilization consistency	MAIN_POS
+Acetate	YES	0.189	A-B	direct/supporting literature evidence	literature-supported substrate-utilization consistency	MAIN_POS
+Butyrate	YES	0.694	A-B	direct/supporting literature evidence	literature-supported substrate-utilization consistency	MAIN_POS
+D-galactose	YES	1.037	B	supporting/pathway-level evidence	literature-supported substrate-utilization consistency	CONDITIONAL_POS
+D-mannose	YES	1.037	B	supporting/pathway-level evidence	literature-supported substrate-utilization consistency	CONDITIONAL_POS
+D-xylose	YES	0.888	B/A-B	supporting literature evidence; not a negative	literature-supported substrate-utilization consistency	CONDITIONAL_POS
