@@ -19,7 +19,18 @@ Repository-ready release package for the genome-scale metabolic model of *Vreela
 
 The iAL1080 identifier is retained as the model name and should not be interpreted as the exact number of biological loci.
 
-The canonical model is `model/iAL1080.xml`; the SHA-bound existing MEMOTE snapshot is in `memote/`. Final figure source tables and publication figures are in `source_data/` and `figures/`. Supplementary Figures S1–S4, their source tables, and portable plotting scripts are grouped under `figures/supplementary/`, `source_data/supplementary/`, and `scripts/supplementary/`. Journal-submission Word files, laboratory workspace outputs, and machine-specific provenance scripts are intentionally excluded from this public code/data release.
+The canonical model is `model/iAL1080.xml`; the SHA-bound existing MEMOTE snapshot is in `memote/`. COBRApy-compatible JSON, YAML, and MATLAB serializations are provided as `model/iAL1080.json`, `model/iAL1080.yaml`, and `model/iAL1080.mat`. They are generated directly from the canonical SBML file by `scripts/export_model_formats.py`, which reloads every format and verifies identifiers, bounds, stoichiometry, and objective coefficients. Final figure source tables and publication figures are in `source_data/` and `figures/`. Supplementary Figures S1–S4, their source tables, and portable plotting scripts are grouped under `figures/supplementary/`, `source_data/supplementary/`, and `scripts/supplementary/`. Journal-submission Word files, laboratory workspace outputs, and machine-specific provenance scripts are intentionally excluded from this public code/data release.
+
+## Model formats
+
+| Format | File | COBRApy loader |
+|---|---|---|
+| SBML Level 3 FBC | `model/iAL1080.xml` | `cobra.io.read_sbml_model` |
+| JSON | `model/iAL1080.json` | `cobra.io.load_json_model` |
+| YAML | `model/iAL1080.yaml` | `cobra.io.load_yaml_model` |
+| MATLAB | `model/iAL1080.mat` | `cobra.io.load_matlab_model` |
+
+The SBML file remains authoritative. Regenerate and verify the alternative formats with `python scripts/export_model_formats.py`.
 
 All 30 retained publication source-data TSV files under `source_data/` are used by a final main figure, a final supplementary figure/table, or a directly relevant figure provenance audit. No raw laboratory workspace, temporary output, internal assistant report, or historical model copy is included.
 

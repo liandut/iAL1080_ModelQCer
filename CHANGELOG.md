@@ -11,3 +11,4 @@
 - Added the existing 16-notebook human-in-the-loop reconstruction workflow as `workflow/`, with its CarveMe draft snapshot, LC1 evidence snapshots, review template, configuration, reusable source modules, and QC/release gates.
 - Sanitized the workflow for public use: repository-relative paths, cleared notebook outputs, and no compiled caches, duplicate candidate XML files, local environment report, or private machine paths.
 - Added the final Supplementary Figures S1–S4, their complete public source tables, Table S1 source, and repository-relative plotting scripts; excluded Word submission files, redundant package manifests, internal reports, and machine-specific original analysis drivers.
+- Added verified COBRApy JSON, YAML, and MATLAB serializations of the canonical SBML model plus a repository-relative export/verification script.
