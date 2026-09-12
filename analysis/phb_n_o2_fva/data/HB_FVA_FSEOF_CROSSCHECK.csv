@@ -1,0 +1,3 @@
+reaction_id,reference_min,reference_max,storage_min,storage_max,FVA_nonoverlap_class
+R_PDH,0.0,3.521208576568891,0.0,3.3574656111936294,overlapping ranges
+R_ACACT1r,-0.07629874215660948,1000.0,3.212553974075145,1000.0,overlapping ranges
